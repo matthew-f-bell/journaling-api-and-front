@@ -55,7 +55,7 @@ class HydrationTracker(models.Model):
     date_of_intake = models.DateField(default=timezone.now)
 
     def __str__(self):
-        return self.max_water
+        return str(self.max_water)
     
     class Meta:
         ordering = ['-date_of_intake']
